@@ -139,7 +139,7 @@ public class iMatMiniController implements Initializable, ShoppingCartListener {
         
         ShoppingCart shoppingCart = model.getShoppingCart();
         
-        itemsLabel.setText("Antal varor: " + shoppingCart.getItems().size());
+        itemsLabel.setText(String.valueOf(shoppingCart.getItems().size()));
         costLabel.setText("Kostnad: " + String.format("%.2f",shoppingCart.getTotal()));
         
     }
