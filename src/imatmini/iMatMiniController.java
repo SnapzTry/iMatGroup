@@ -5,17 +5,24 @@
  */
 package imatmini;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import se.chalmers.cse.dat216.project.CartEvent;
 import se.chalmers.cse.dat216.project.CreditCard;
 import se.chalmers.cse.dat216.project.Product;
@@ -28,7 +35,12 @@ import se.chalmers.cse.dat216.project.ShoppingCartListener;
  * @author oloft
  */
 public class iMatMiniController implements Initializable, ShoppingCartListener {
-    
+
+    @FXML
+    private Label erbjudanden;
+
+
+
     // Shopping Pane
     @FXML
     private AnchorPane shopPane;
@@ -189,5 +201,46 @@ public class iMatMiniController implements Initializable, ShoppingCartListener {
         
         yearCombo.getItems().addAll(model.getYears());
         
+    }
+
+
+    public void home_view() throws IOException {
+        Stage primaryStage = (Stage) erbjudanden.getScene().getWindow();
+        primaryStage.close();
+        primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("iMatMini.fxml"));
+        primaryStage.setTitle("Home");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    public void erbjud_view() throws IOException {
+        Stage primaryStage = (Stage) erbjudanden.getScene().getWindow();
+        primaryStage.close();
+        primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("erbjudanden.fxml"));
+        primaryStage.setTitle("Erbjudanden");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    public void favorites_view() throws IOException {
+        Stage primaryStage = (Stage) erbjudanden.getScene().getWindow();
+        primaryStage.close();
+        primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("favoriter.fxml"));
+        primaryStage.setTitle("Favoriter");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    public void myLists_view() throws IOException {
+        Stage primaryStage = (Stage) erbjudanden.getScene().getWindow();
+        primaryStage.close();
+        primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("inkoplistor.fxml"));
+        primaryStage.setTitle("Inköpslistor");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
     }
 }
