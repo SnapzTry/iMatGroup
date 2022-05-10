@@ -262,6 +262,15 @@ public class iMatMiniController implements Initializable, ShoppingCartListener {
         primaryStage.show();
     }
 
+    public void myPages_view() throws IOException {
+        Stage primaryStage = (Stage) erbjudanden.getScene().getWindow();
+        primaryStage.close();
+        primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("mypages.fxml"));
+        primaryStage.setTitle("Mina sidor");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
 
 
 }
