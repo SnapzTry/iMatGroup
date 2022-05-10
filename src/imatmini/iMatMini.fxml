@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imatmini.iMatMiniController">
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imatmini.iMatMiniController">
     <children>
       <StackPane prefHeight="560.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -42,26 +42,36 @@
                   </AnchorPane>
                </children>
             </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="10.0">
+               <children>
+                  <ScrollPane layoutX="1536.0" layoutY="160.0" prefHeight="776.0" prefWidth="327.0">
+                     <content>
+                        <FlowPane fx:id="productsCartFlowPane" prefHeight="205.0" prefWidth="318.0" />
+                     </content>
+                  </ScrollPane>
+                  <Label text="Label" />
+               </children>
+            </AnchorPane>
             <AnchorPane fx:id="shopPane" prefHeight="240.0" prefWidth="720.0" style="-fx-background-color: #FFF000;">
                <children>
-                  <AnchorPane layoutY="102.0" prefHeight="39.0" prefWidth="1189.0" style="-fx-background-color: green;" AnchorPane.rightAnchor="0.0">
+                  <AnchorPane layoutY="102.0" prefHeight="39.0" prefWidth="1920.0" style="-fx-background-color: green;" AnchorPane.rightAnchor="0.0">
                      <children>
-                        <Label layoutX="345.0" layoutY="4.0" onMouseClicked="#home_view" text="Hem" textFill="WHITE" AnchorPane.rightAnchor="800.0">
+                        <Label layoutX="635.0" layoutY="5.0" onMouseClicked="#home_view" text="Hem" textFill="WHITE" AnchorPane.rightAnchor="1241.0">
                            <font>
                               <Font size="21.0" />
                            </font>
                         </Label>
-                        <Label fx:id="erbjudanden" layoutX="417.0" layoutY="5.0" onMouseClicked="#erbjud_view" text="Erbjudanden" textFill="WHITE" AnchorPane.rightAnchor="654.0">
+                        <Label fx:id="erbjudanden" layoutX="707.0" layoutY="6.0" onMouseClicked="#erbjud_view" text="Erbjudanden" textFill="WHITE" AnchorPane.rightAnchor="1095.0">
                            <font>
                               <Font size="21.0" />
                            </font>
                         </Label>
-                        <Label layoutX="612.0" layoutY="4.0" onMouseClicked="#favorites_view" prefWidth="82.0" text="Favoriter" textFill="WHITE" AnchorPane.rightAnchor="495.0">
+                        <Label layoutX="902.0" layoutY="5.0" onMouseClicked="#favorites_view" prefWidth="82.0" text="Favoriter" textFill="WHITE" AnchorPane.rightAnchor="936.0">
                            <font>
                               <Font size="21.0" />
                            </font>
                         </Label>
-                        <Label layoutX="787.0" layoutY="5.0" onContextMenuRequested="#myLists_view" text="Inköpslistor" textFill="WHITE" AnchorPane.rightAnchor="294.0">
+                        <Label layoutX="1077.0" layoutY="6.0" onContextMenuRequested="#myLists_view" text="Inköpslistor" textFill="WHITE" AnchorPane.rightAnchor="735.0">
                            <font>
                               <Font size="21.0" />
                            </font>
@@ -89,6 +99,7 @@
                         </Label>
                         <Label fx:id="itemsLabel" layoutX="1118.0" layoutY="68.0" prefHeight="17.0" prefWidth="36.0" text="7" textFill="WHITE" AnchorPane.rightAnchor="35.0" />
                         <Label fx:id="costLabel" layoutX="997.0" layoutY="76.0" text="Kostnad: 3456.60" textFill="WHITE" AnchorPane.rightAnchor="101.0" />
+                        <Label fx:id="testName" layoutX="274.0" layoutY="55.0" text="Label" textFill="WHITE" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutY="501.0" prefHeight="59.0" prefWidth="1189.0" style="-fx-background-color: #ff6600;">
@@ -99,7 +110,7 @@
                   </AnchorPane>
                   <ScrollPane hbarPolicy="NEVER" layoutY="154.0" prefHeight="346.0" prefWidth="1189.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="154.0">
                      <content>
-                        <FlowPane fx:id="productsFlowPane" prefHeight="395.0" prefWidth="1212.0" style="-fx-background-color: #FFFFFF;" vgap="4.0" />
+                        <FlowPane fx:id="productsFlowPane" hgap="28.0" prefHeight="864.0" prefWidth="1427.0" style="-fx-background-color: #FFFFFF;" vgap="28.0" />
                      </content>
                   </ScrollPane>
                </children>
