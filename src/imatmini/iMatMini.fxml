@@ -100,6 +100,7 @@
                         <Label fx:id="itemsLabel" layoutX="1118.0" layoutY="68.0" prefHeight="17.0" prefWidth="36.0" text="7" textFill="WHITE" AnchorPane.rightAnchor="35.0" />
                         <Label fx:id="costLabel" layoutX="997.0" layoutY="76.0" text="Kostnad: 3456.60" textFill="WHITE" AnchorPane.rightAnchor="101.0" />
                         <Label fx:id="testName" layoutX="274.0" layoutY="55.0" text="Label" textFill="WHITE" />
+                        <Button layoutX="691.0" layoutY="72.0" mnemonicParsing="false" onAction="#myPages_view" text="tests" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutY="501.0" prefHeight="59.0" prefWidth="1189.0" style="-fx-background-color: #ff6600;">

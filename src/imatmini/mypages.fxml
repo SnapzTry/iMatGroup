@@ -16,27 +16,27 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="194.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="profilepic" fitHeight="150.0" fitWidth="150.0" layoutX="194.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../../Downloads/img_364496.png" />
                      </image>
                   </ImageView>
-                  <Label alignment="CENTER" layoutX="118.0" layoutY="292.0" prefHeight="100.0" prefWidth="300.0" text="Name" textAlignment="CENTER">
+                  <Label fx:id="myname" alignment="CENTER" layoutX="118.0" layoutY="292.0" prefHeight="100.0" prefWidth="300.0" text="Name" textAlignment="CENTER">
                      <font>
                         <Font name="American Typewriter" size="40.0" />
                      </font>
                   </Label>
-                  <Button layoutX="59.0" layoutY="409.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="414.0" text="Mina uppgifter">
+                  <Button fx:id="mypages" layoutX="59.0" layoutY="409.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="414.0" text="Mina uppgifter">
                      <font>
                         <Font size="46.0" />
                      </font>
                   </Button>
-                  <Button layoutX="59.0" layoutY="518.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="414.0" text="Mina uppgifter">
+                  <Button fx:id="orderhistory" layoutX="59.0" layoutY="518.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="414.0" text="Min köphistorik">
                      <font>
                         <Font size="46.0" />
                      </font>
                   </Button>
-                  <Button layoutX="147.0" layoutY="998.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="233.0" style="-fx-background-color: red;" text="Stäng">
+                  <Button fx:id="close" layoutX="147.0" layoutY="998.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="233.0" style="-fx-background-color: red;" text="Stäng">
                      <font>
                         <Font size="36.0" />
                      </font>
@@ -47,86 +47,7 @@
                <children>
                   <StackPane layoutX="-21.0" layoutY="-37.0" prefHeight="1209.0" prefWidth="1259.0">
                      <children>
-                        <AnchorPane prefHeight="1205.0" prefWidth="1207.0" style="-fx-background-color: white;">
-                           <children>
-                              <Label layoutX="130.0" layoutY="81.0" prefHeight="136.0" prefWidth="468.0" text="Mina uppgifter">
-                                 <font>
-                                    <Font size="50.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="36.0" layoutY="164.0" prefHeight="136.0" prefWidth="468.0" text="Kontaktuppgifter" AnchorPane.leftAnchor="36.0">
-                                 <font>
-                                    <Font size="55.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="31.0" layoutY="502.0" prefHeight="136.0" prefWidth="468.0" text="Adress">
-                                 <font>
-                                    <Font size="55.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="37.0" layoutY="700.0" prefHeight="136.0" prefWidth="468.0" text="Betalningsuppgifter">
-                                 <font>
-                                    <Font size="55.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="65.0" layoutY="286.0" prefHeight="78.0" prefWidth="330.0" promptText="Förnamn">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <TextField layoutX="428.0" layoutY="285.0" prefHeight="78.0" prefWidth="330.0" promptText="Efternamn">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <TextField layoutX="67.0" layoutY="400.0" prefHeight="78.0" prefWidth="553.0" promptText="Epostadress">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <TextField layoutX="649.0" layoutY="403.0" prefHeight="78.0" prefWidth="393.0" promptText="Telefon">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <TextField layoutX="61.0" layoutY="621.0" prefHeight="78.0" prefWidth="476.0" promptText="Adress">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <TextField layoutX="560.0" layoutY="620.0" prefHeight="78.0" prefWidth="265.0" promptText="Postnummer">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <TextField layoutX="66.0" layoutY="825.0" prefHeight="78.0" prefWidth="604.0" promptText="Kortnummer">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <TextField layoutX="66.0" layoutY="924.0" prefHeight="78.0" prefWidth="290.0" promptText="Giltigt till">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <TextField layoutX="385.0" layoutY="920.0" prefHeight="78.0" prefWidth="282.0" promptText="Säkerhetskod">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </TextField>
-                              <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="73.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../../../Downloads/img_364496.png" />
-                                 </image>
-                              </ImageView>
-                              <Button layoutX="937.0" layoutY="1045.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="256.0" style="-fx-background-color: green;" text="Spara ändringar">
-                                 <font>
-                                    <Font size="30.0" />
-                                 </font>
-                              </Button>
-                           </children>
-                        </AnchorPane>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                        <AnchorPane fx:id="myorderhistory" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
                            <children>
                               <Button alignment="BASELINE_LEFT" layoutX="68.0" layoutY="245.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="446.0" text="Visa köp">
                                  <font>
@@ -151,6 +72,85 @@
                                     <Font size="50.0" />
                                  </font>
                               </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="myinfo" prefHeight="1205.0" prefWidth="1207.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label layoutX="130.0" layoutY="81.0" prefHeight="136.0" prefWidth="468.0" text="Mina uppgifter">
+                                 <font>
+                                    <Font size="50.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="164.0" prefHeight="136.0" prefWidth="468.0" text="Kontaktuppgifter" AnchorPane.leftAnchor="36.0">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="31.0" layoutY="502.0" prefHeight="136.0" prefWidth="468.0" text="Adress">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="700.0" prefHeight="136.0" prefWidth="468.0" text="Betalningsuppgifter">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="firstname" layoutX="65.0" layoutY="286.0" prefHeight="78.0" prefWidth="330.0" promptText="Förnamn">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="surname" layoutX="428.0" layoutY="285.0" prefHeight="78.0" prefWidth="330.0" promptText="Efternamn">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="mail" layoutX="67.0" layoutY="400.0" prefHeight="78.0" prefWidth="553.0" promptText="Epostadress">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="phone" layoutX="649.0" layoutY="403.0" prefHeight="78.0" prefWidth="393.0" promptText="Telefon">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="address" layoutX="61.0" layoutY="621.0" prefHeight="78.0" prefWidth="476.0" promptText="Adress">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="postcode" layoutX="560.0" layoutY="620.0" prefHeight="78.0" prefWidth="265.0" promptText="Postnummer">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="cardnumber" layoutX="66.0" layoutY="825.0" prefHeight="78.0" prefWidth="604.0" promptText="Kortnummer">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="validthru" layoutX="66.0" layoutY="924.0" prefHeight="78.0" prefWidth="290.0" promptText="Giltigt till">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="cvc" layoutX="385.0" layoutY="920.0" prefHeight="78.0" prefWidth="282.0" promptText="Säkerhetskod">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </TextField>
+                              <ImageView fx:id="myinfoimage" fitHeight="48.0" fitWidth="45.0" layoutX="73.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Downloads/img_364496.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="savechanges" layoutX="937.0" layoutY="1045.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="256.0" style="-fx-background-color: green;" text="Spara ändringar">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Button>
                            </children>
                         </AnchorPane>
                      </children>
